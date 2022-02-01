@@ -23,6 +23,7 @@ public class Refactor6 {
         }
 
         public void removeAllOcurrencesOf(String text) {
+            // test comment
             this.content = this.content.replace(text, "");
             this.modifications++;
             System.out.println("removing content: " + text);
