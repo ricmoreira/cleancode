@@ -6,11 +6,11 @@ public class Case5 {
         private int y;
 
         public void setX(int val) {
-            this.y = val;
+            this.x = val;
         }
 
         public int getY() {
-            return this.x;
+            return this.y;
         }
     }
 }
