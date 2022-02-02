@@ -9,6 +9,7 @@ public class Case3 {
         if (j.isRunning()){
             return "Running";
         }
+        
         return j.hasErrors() ? "Failed" : "Succeeded";
     }
 }
