@@ -6,6 +6,9 @@ public class Case3 {
         public boolean hasErrors() {return true;}
     }
     public String getReadableStatus(Job j) {
-        return j.isRunning() ? "Running" : j.hasErrors() ? "Failed" : "Succeeded";
+        if (j.isRunning()){
+            return "Running";
+        }
+        return j.hasErrors() ? "Failed" : "Succeeded";
     }
 }
