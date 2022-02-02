@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Case9 {
     void doSomethingIfTrue(ArrayList<String> namesList) {
-        if (namesList.size() > 0) {
+        if (!namesList.isEmpty()) {
             foo();
         } else {
             bar();
@@ -12,6 +12,10 @@ public class Case9 {
 
     }
 
-    public void foo(){}
-    public void bar(){}
+    public void foo() {
+        /* TODO document why this method is empty */ }
+
+    public void bar() {
+        throw new UnsupportedOperationException();
+    }
 }
