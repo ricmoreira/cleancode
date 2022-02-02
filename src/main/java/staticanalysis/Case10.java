@@ -1,6 +1,11 @@
 package staticanalysis;
 
 public class Case10 {
+
+    private Case10() {
+        // Nothing to here
+    }
+
     public static class Person {
         String name;
         int age;
