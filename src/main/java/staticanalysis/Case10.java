@@ -1,9 +1,7 @@
 package staticanalysis;
 
-import java.util.ArrayList;
-
 public class Case10 {
-    public class Person {
+    public static class Person {
         String name;
         int age;
 
@@ -11,12 +9,14 @@ public class Case10 {
             this.name = name;
         }
 
-        public String getName() {
+        public synchronized String getName() {
             return this.name;
         }
 
         public void setAge(int age) {
-            this.age = age;
+            synchronized (this) {
+                this.age = age;
+            }
         }
 
         public int getAge() {
