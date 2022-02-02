@@ -3,9 +3,9 @@ package staticanalysis;
 public class Case4 {
     public void doSomething(){
         int j = 0;
-        while (true) {
+        do {
             j++;
-        }
+        } while (j <= 10);
 
     }
 }
