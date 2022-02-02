@@ -7,8 +7,9 @@ import java.sql.SQLException;
 public class Case6 {
     class SQLService {
         public void connect() throws SQLException {
-            Connection conn = DriverManager.getConnection("jdbc:derby:memory:myDB;create=true", "login", "");
-            //....
+            Connection conn = DriverManager.getConnection(System.getenv("DB_JDBC_URL"), System.getenv("DB_USER"),
+                    System.getenv("DB_PASSWORD"));
+            conn.close();
         }
     }
 }
