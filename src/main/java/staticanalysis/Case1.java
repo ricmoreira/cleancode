@@ -1,5 +1,6 @@
 package staticanalysis;
 
+// this is a test
 public class Case1 {
     int whatIsWrongHere(int a) {
         int b = 12;
