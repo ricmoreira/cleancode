@@ -6,6 +6,6 @@ public class Case1 {
         if (a == 1) {
             return a;
         }
-        return a;
+        return b;
     }
 }
