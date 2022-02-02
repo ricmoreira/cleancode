@@ -16,11 +16,15 @@ public class Refactor6 {
             return modifications;
         }
 
-        public void appendContent(String newContent) {
+        public void operat(String newContent) {
             this.content+= newContent;
             this.modifications++;
             System.out.println("appending content: " + newContent);
         }
+
+        private void appendCont(){}
+        private void increaseCounter(){}
+        private void logOperation(){}
 
         public void removeAllOcurrencesOf(String text) {
             // test comment
